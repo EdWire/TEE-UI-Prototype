@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react"
-import FigmaComponent from '../common/FigmaComponent'
 
 interface ContentProps {
     children: JSX.Element
@@ -14,7 +13,6 @@ const Content = ({ children }: ContentProps) => {
             padding='0 35px'>
                 <main>
                     { children }
-                    <FigmaComponent />
                 </main>
         </Flex>
     )

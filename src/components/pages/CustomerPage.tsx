@@ -1,13 +1,10 @@
-import { Button, Flex, Heading, Link, Text } from "@chakra-ui/react"
-import { Link as RouterLink } from "react-router-dom"
-import routes from "../../core/routes"
+import { Button, Flex, Heading, Text } from "@chakra-ui/react"
 import ToggleModeBtn from "../common/ToggleModeBtn"
 
-const HomePage = () => {
+const CustomerPage = () => {
     return (    
         <Flex flexDirection='column'>
-            <Heading>Home Page</Heading>
-            <Link as={RouterLink} to={routes.customers.url}>{routes.customers.name}</Link>
+            <Heading>Customer Page</Heading>
             <Text marginTop='50px' marginBottom='50px'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum unde repellendus consequatur porro officia aut assumenda laboriosam libero delectus, quia dolore quas, facilis ipsa laborum perspiciatis exercitationem officiis ad!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis quam reprehenderit voluptatem. Laborum iste rerum earum perferendis dolores tempore, nostrum natus fugit provident officiis, atque suscipit ea labore? Tempore!
@@ -21,4 +18,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default CustomerPage

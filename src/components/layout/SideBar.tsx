@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react"
+import { Flex, Stack } from "@chakra-ui/react"
 import SideBarMenu from "./SideBarMenu"
 
 const SideBar = () => {
@@ -6,7 +6,6 @@ const SideBar = () => {
         <>
             <Flex 
                 flexDirection='column'
-                bg='white'
                 position='fixed'
                 minH='100vh'
                 maxW='300px'

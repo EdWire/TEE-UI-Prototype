@@ -5,7 +5,6 @@ import TopBarInfo from "./TopBarInfo"
 const TopBar = () => {
     return (
         <Flex 
-            bg="white"
             alignItems='center'
             position='fixed'
             shadow='0 0 2px gray'
