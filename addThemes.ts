@@ -4,10 +4,10 @@ const pluginName = 'te-themes:plugin'
 
 const sharedFolderPath = 'src/shared'
 const sharedMappings = [
-    ['../node_modules/@edgraph/shared/src/shared', sharedFolderPath],
+    ['../node_modules/te-themes/src/shared/themes', sharedFolderPath],
 ]
     
-export default async function () {
+export const addThemes = () => {
     // Remove shared folder if exists  
     if (existsSync(sharedFolderPath)) {
         console.info(`Removing file "${sharedFolderPath}"...`)
@@ -38,5 +38,5 @@ export default async function () {
         }
     })
     
-    return { name: pluginName }
+    return { name: pluginName, enforce: 'pre' } as const
 }

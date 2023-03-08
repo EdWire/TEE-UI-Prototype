@@ -4,6 +4,8 @@ import Layout from './components/layout/Layout'
 
 // <ColorModeScript initialColorMode={activeTheme.config.initialColorMode} />
 
+const activeTheme = {}
+
 function App() {
   return (
     <div className="App">
