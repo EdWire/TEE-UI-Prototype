@@ -15,7 +15,7 @@ export const Buttons = () => {
                 size="lg"
                 variant="solid"
                 colorScheme="blue">
-                    Button
+                    Button 1
             </Button>
             <Button
                     leftIcon={<ReactIcon data-icon="CkReact" />}
@@ -23,7 +23,7 @@ export const Buttons = () => {
                     size="lg"
                     variant="solid"
                     colorScheme="green">
-                    Button
+                    Button 2
                 </Button>
         </Stack>
         
