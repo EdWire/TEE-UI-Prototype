@@ -1,14 +1,18 @@
 import { Button, Flex, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Text } from "@chakra-ui/react"
 import NotificationsPopover from "../common/NotificationsPopover"
+import ToggleModeBtn from "../common/ToggleModeBtn"
 
 const TopBarInfo = () => {
     return (
         <Flex alignItems='center'>
             <Text marginRight='12px'>User Name</Text>
+            <Flex marginRight='12px'>
+                <ToggleModeBtn />
+            </Flex>
             <NotificationsPopover />
             <Popover>
                 <PopoverTrigger>
-                    <Button bg='white' border='1px'>Logout</Button>
+                    <Button>Logout</Button>
                 </PopoverTrigger>
                 <PopoverContent>
                     <PopoverArrow />

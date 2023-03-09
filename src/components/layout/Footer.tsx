@@ -4,10 +4,11 @@ const Footer = () => {
     return (
         <footer style={{ marginTop: 'auto' }}>
             <Flex 
-                bg='blackAlpha.700' 
+                bg='blue.900' 
+                w='full'
                 justifyContent='center'
                 textColor='white'
-                padding='5'>
+                padding='10'>
                     <Text>SPA prototype</Text>
             </Flex>
         </footer>

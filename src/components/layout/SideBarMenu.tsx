@@ -6,14 +6,22 @@ const SideBarMenu = () => {
     return (
         <Flex 
             flexDirection='column'
-            borderColor='red'
-            borderBottom='1px'>
+            marginTop='15px'
+            justifyContent='center'>
                 {menuList.map((item, key) => 
                     <Link 
-                        borderColor='red'
+                        display='flex'
+                        justifyContent='center'
+                        textDecor='none'
                         padding='10px 15px'
-                        borderTop='1px'
-                        _hover={{ bg: 'lightgray' }}
+                        border='2px'
+                        borderColor='blue.800'
+                        color='blue.800'
+                        _hover={{ 
+                            bg: 'orange.500', 
+                            color: 'white',
+                            borderColor: 'orange.500'
+                        }}
                         key={key}>
                             <Text fontWeight='bold'>{ item }</Text>
                     </Link>

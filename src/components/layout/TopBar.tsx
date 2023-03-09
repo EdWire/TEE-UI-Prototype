@@ -5,10 +5,11 @@ import TopBarInfo from "./TopBarInfo"
 const TopBar = () => {
     return (
         <Flex 
+            bg='blue.200'
             alignItems='center'
             position='fixed'
             shadow='0 0 2px gray'
-            h='80px'
+            h='65px'
             w="100%">
                 <Flex 
                     justifyContent='space-between'

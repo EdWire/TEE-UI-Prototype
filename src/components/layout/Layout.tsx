@@ -13,9 +13,9 @@ const Layout = () => {
             minH='100vh'
             width='100%'>
                 <TopBar/>
-                <Flex minH='100vh'>
-                    <SideBar/>
-                    <Flex flexDirection='column' maxW='calc(100% - 300px)' justifyContent='center'>
+                <Flex w="full" minH='100vh'>
+                    <SideBar />
+                    <Flex w='full' flexDirection='column' justifyContent='center'>
                         <Content>
                             <AppRouter />
                         </Content>

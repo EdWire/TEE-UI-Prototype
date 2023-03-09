@@ -1,27 +1,19 @@
-import { Flex, Stack } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 import SideBarMenu from "./SideBarMenu"
 
 const SideBar = () => {
     return (
-        <>
-            <Flex 
-                flexDirection='column'
-                position='fixed'
-                minH='100vh'
-                maxW='300px'
-                top='80px'
-                boxShadow="0 0 2px gray"
-                width='25%'
-                zIndex='2'>
-                    <SideBarMenu />
-            </Flex>
-            <Flex
-                minH='100vh'
-                maxW='300px'
-                marginTop='80px'
-                width='25%'
-                zIndex='1'/>
-        </>
+        <Flex 
+            flexDirection='column'
+            position='fixed'
+            bg='white'
+            minH='100vh'
+            w='120px'
+            top='65px'
+            boxShadow="0 0 1px gray"
+            zIndex='2'>
+                <SideBarMenu />
+        </Flex>
     )
 }
 
