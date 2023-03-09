@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { addThemes } from './addThemes'
+import { addThemes } from './plugins/addThemes'
 import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({

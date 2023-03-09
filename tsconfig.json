@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "plugins", "addThemes.ts"],
+  "include": ["src", "plugins", "plugins/addThemes.tshemes.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

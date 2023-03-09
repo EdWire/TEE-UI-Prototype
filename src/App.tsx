@@ -1,16 +1,16 @@
 import { BrowserRouter } from 'react-router-dom'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import Layout from './components/layout/Layout'
+import baseTheme from './shared/baseTheme'
 
-// <ColorModeScript initialColorMode={activeTheme.config.initialColorMode} />
-
-const activeTheme = {}
+const activeTheme = baseTheme
 
 function App() {
   return (
     <div className="App">
         <BrowserRouter>
-            <ChakraProvider>
+            <ColorModeScript initialColorMode={activeTheme.config.initialColorMode} />
+            <ChakraProvider theme={activeTheme}>
               <Layout />
             </ChakraProvider>
         </BrowserRouter>
