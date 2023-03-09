@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import Layout from './components/layout/Layout'
-import baseTheme from './shared/baseTheme'
+import baseTheme from './shared/themes/baseTheme'
 
 const activeTheme = baseTheme
 

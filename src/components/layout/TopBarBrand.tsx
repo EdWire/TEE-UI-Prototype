@@ -1,9 +1,11 @@
-import { Flex, Heading } from "@chakra-ui/react"
+import { Flex, Heading, Image } from "@chakra-ui/react"
 
 const TopBarBrand = () => {
     return (
         <Flex>
-            <Heading>APP Name</Heading>
+            <Image 
+                height='40px'
+                src="src/assets/logo.svg" />
         </Flex>
     )
 }

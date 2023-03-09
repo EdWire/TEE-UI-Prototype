@@ -4,7 +4,7 @@ const pluginName = 'te-themes:plugin'
 
 const sharedFolderPath = 'src/shared'
 const sharedMappings = [
-    ['../node_modules/te-themes/src/shared/themes', sharedFolderPath],
+    ['../node_modules/te-themes/src/shared', sharedFolderPath],
 ]
     
 export const addThemes = () => {

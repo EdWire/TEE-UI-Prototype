@@ -1,7 +1,10 @@
 import { Flex, Text, Heading, Link } from "@chakra-ui/react"
 import { Link as RouterLink } from "react-router-dom"
 import routes from "../../core/routes"
+// import FramerMagic from '../../shared/components/FramerMagic'
+import MagicButton from "../../shared/components/MagicButton"
 
+// <FramerMagic />
 const HomePage = () => {
     return (    
         <Flex flexDirection='column'>
@@ -18,6 +21,7 @@ const HomePage = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, exercitationem, facilis velit architecto quasi inventore nemo placeat aliquam distinctio, reprehenderit atque! Ad eos ea, recusandae reiciendis in iste dolores consequuntur!
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae molestiae rerum dolorum ullam. Quasi illum saepe tenetur laudantium explicabo suscipit nemo vero, amet veniam aperiam in nam ipsum? Ex, fuga!
             </Text>
+            <MagicButton text="SUUPER!" />
         </Flex>
     )
 }
