@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
-import { addThemes } from './plugins/addThemes'
+import { addShared } from './plugins/addShared'
 import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [
-    addThemes(),
+    addShared(),
     react(),
   ]
 })

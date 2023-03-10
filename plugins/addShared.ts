@@ -7,8 +7,7 @@ const sharedMappings = [
     ['../node_modules/te-themes/src/shared', sharedFolderPath],
 ]
     
-export const addThemes = () => {
-    // Remove shared folder if exists  
+export const addShared = () => {
     if (existsSync(sharedFolderPath)) {
         console.info(`Removing file "${sharedFolderPath}"...`)
         unlinkSync(sharedFolderPath)
@@ -28,7 +27,6 @@ export const addThemes = () => {
             if (e instanceof Error) {
                 const errorCode = (e as any).code
                 if (errorCode === 'EEXIST') {
-                    // Ignore this type of error (file already exists)          
                     console.info('Ignore this error.')
                     return
                 } 
