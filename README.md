@@ -1,5 +1,5 @@
 # TE - STARTUP APP
-[TE - TEXAS EXCHANGE](./exchange.svg)
+[TE - TEXAS EXCHANGE](https://github.com/[EdWire]/[TEE-UI-Prototype]/blob/[main]/exchange.svg?raw=true)
 
 This is the startup app that works as the base project template. Created
 from the Vite react-ts template. 
